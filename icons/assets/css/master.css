@@ -9,10 +9,10 @@
   margin: 0 auto;
 }
 
+/* header & nav */
 .logo{
   color: #00e5ff;
   font-size: 25px;
-  margin-top: 20px;
 }
 
 .navbar{
@@ -29,4 +29,11 @@
 .nav > h3{
   color: #ffffff;
   text-transform: uppercase;
+}
+
+/* box */
+.box{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
