@@ -102,6 +102,28 @@ $(document).ready(function() {
 // Partendo dalla seguente struttura dati, mostriamo
 // in pagina tutte le icone disponibili come da layout.
 
+icons.forEach((item, index) => {
+
+  $(".box").append(`<div>
+    <i class="${item.family} ${item.prefix}${item.name}"></i>
+    <div>${item.name}</div>
+    </div>`);
+
+// Milestone 2
+// Coloriamo le icone per tipo.
+
+  $($(".box i")[index]).css("color", () => {
+    if(item.type == "animal"){
+      return "#0800ff";
+    } else if(item.type == "vegetable"){
+      return "#ffbf00";
+    }
+    else if(item.type == "user"){
+      return "#8e00d6";
+    }
+  });
+});
+
 
 
 
