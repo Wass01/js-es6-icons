@@ -122,6 +122,15 @@ icons.forEach((item, index) => {
       return "#8e00d6";
     }
   });
+
+// Milestone 3 (BONUS)
+// Creiamo una select con i tipi di icone
+// e usiamola per filtrare le icone
+
+  const animali = icons.filter((item) => {return item.type == "animal"});
+  const vegetali = icons.filter((item) => {return item.type == "vegetable"});
+  const user = icons.filter((item) => {return item.type == "user"});
+
 });
 
 
